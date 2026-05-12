@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Robert Vincent Payne — Personal Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ════════════ PAGE LOADER ════════════ -->
+<div id="page-loader">
+  <div class="loader-ring"></div>
+</div>
+
+<!-- ════════════ SCROLL PROGRESS ════════════ -->
+<div id="progress-bar"></div>
+
+<!-- ════════════ BACK TO TOP ════════════ -->
+<button id="back-to-top" aria-label="Back to top">↑</button>
+
+<!-- ════════════════════════════ HEADER ════════════════════════════ -->
+<header>
+  <div class="header-inner">
+    <div class="avatar">RVP</div>
+    <div class="header-text">
+      <!-- data-text holds the full name; JS types it out character by character -->
+      <h1 id="hero-name" data-text="Robert Vincent Payne"></h1>
+      <p class="tagline">Computer Science Student &amp; Web Developer</p>
+      <div class="contact-row">
+        <span data-icon="📍">Cape Coast, Ghana</span>
+        <span data-icon="✉️">robert.payne@email.com</span>
+        <span data-icon="📞">+233 20 123 4567</span>
+        <span data-icon="🌐">github.com/robertvpayne</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ════════════════════════════ NAV ════════════════════════════ -->
+<nav aria-label="Main navigation">
+  <ul>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#classmates">Classmates</a></li>
+  </ul>
+</nav>
+
+<!-- ════════════════════════════ PAGE BODY ════════════════════════════ -->
+<div class="page-wrap">
+
+  <!-- ─── MAIN ─── -->
+  <main>
+
+    <!-- ══ SECTION 1 : About ══ -->
+    <section id="about">
+      <div class="section-label reveal"><h2>About Me</h2></div>
+      <p class="reveal">
+        I am a passionate Computer Science student at the University of Cape Coast, driven by a love
+        for building elegant, accessible web experiences and solving real-world problems through
+        software. I thrive in collaborative environments and believe technology can transform
+        communities across Africa and beyond.
+      </p>
+
+      <div class="about-media">
+
+        <!-- Image -->
+        <div class="media-card reveal">
+          <div class="img-placeholder">🎓</div>
+          <p>📸 Campus Photo — University of Cape Coast</p>
+        </div>
+
+        <!-- Audio introduction -->
+        <div class="media-card reveal">
+          <p>🎙️ Audio Introduction</p>
+          <audio controls>
+            <source src="intro.mp3" type="audio/mpeg"/>
+            Your browser does not support the audio element.
+          </audio>
+          <p style="padding-bottom:10px;">Listen to my brief self-introduction.</p>
+        </div>
+
+        <!-- Video portfolio -->
+        <div class="media-card reveal">
+          <p>🎬 Portfolio Showcase</p>
+          <video controls>
+            <source src="portfolio.mp4" type="video/mp4"/>
+            Your browser does not support the video element.
+          </video>
+          <p style="padding-bottom:10px;">A short walkthrough of my projects.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ SECTION 2 : Experience & Education ══ -->
+    <section id="experience">
+      <div class="section-label reveal"><h2>Experience &amp; Education</h2></div>
+
+      <div class="job reveal">
+        <div class="job-title">Frontend Developer Intern</div>
+        <div class="job-meta">TechBridge Ghana &bull; Jun 2024 – Dec 2024</div>
+        <ul>
+          <li>Built responsive UI components with HTML5, CSS3, and vanilla JavaScript.</li>
+          <li>Improved page load speed by 30&nbsp;% through lazy-loading and code splitting.</li>
+          <li>Collaborated with UX designers to implement accessible ARIA patterns.</li>
+        </ul>
+      </div>
+
+      <div class="job reveal">
+        <div class="job-title">Web Design Freelancer</div>
+        <div class="job-meta">Self-Employed &bull; Jan 2023 – Present</div>
+        <ul>
+          <li>Designed and deployed 8 SME websites for local businesses in Cape Coast.</li>
+          <li>Integrated payment gateways and Google Analytics for clients.</li>
+          <li>Maintained ongoing client relationships and post-launch support.</li>
+        </ul>
+      </div>
+
+      <div class="job reveal">
+        <div class="job-title">BSc Computer Science (In Progress)</div>
+        <div class="job-meta">University of Cape Coast &bull; 2022 – 2026</div>
+        <ul>
+          <li>Current CGPA: 3.7 / 4.0 &nbsp;|&nbsp; Dean's List 2023 &amp; 2024.</li>
+          <li>Relevant courses: Data Structures, Web Technologies, Databases, AI Fundamentals.</li>
+          <li>Vice-President, Computer Science Students' Association (CSSA).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 3 : Classmates ══ -->
+    <section id="classmates">
+      <div class="section-label reveal"><h2>My Classmates</h2></div>
+      <table class="reveal">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Full Name</th>
+            <th>Student ID</th>
+            <th>Specialisation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Abena Owusu</td><td>UCC/CS/2022/001</td><td><span class="badge">Cybersecurity</span></td></tr>
+          <tr><td>2</td><td>Kofi Asante</td><td>UCC/CS/2022/002</td><td><span class="badge">Data Science</span></td></tr>
+          <tr><td>3</td><td>Ama Boateng</td><td>UCC/CS/2022/003</td><td><span class="badge">Web Dev</span></td></tr>
+          <tr><td>4</td><td>Kwame Darko</td><td>UCC/CS/2022/004</td><td><span class="badge">AI / ML</span></td></tr>
+          <tr><td>5</td><td>Efua Acheampong</td><td>UCC/CS/2022/005</td><td><span class="badge">Networking</span></td></tr>
+          <tr><td>6</td><td>Yaw Amponsah</td><td>UCC/CS/2022/006</td><td><span class="badge">Software Eng.</span></td></tr>
+          <tr><td>7</td><td>Adwoa Frimpong</td><td>UCC/CS/2022/007</td><td><span class="badge">Data Science</span></td></tr>
+          <tr><td>8</td><td>Nana Agyemang</td><td>UCC/CS/2022/008</td><td><span class="badge">Cybersecurity</span></td></tr>
+          <tr><td>9</td><td>Akosua Mensah</td><td>UCC/CS/2022/009</td><td><span class="badge">Web Dev</span></td></tr>
+          <tr><td>10</td><td>Kweku Osei</td><td>UCC/CS/2022/010</td><td><span class="badge">AI / ML</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- ─── ASIDE ─── -->
+  <aside>
+
+    <div class="aside-block reveal">
+      <div class="aside-title">Technical Skills</div>
+
+      <div class="skill-item">
+        <span><span>HTML5 / CSS3</span><span>95%</span></span>
+        <div class="bar"><div class="bar-fill" data-width="95%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span><span>JavaScript</span><span>85%</span></span>
+        <div class="bar"><div class="bar-fill" data-width="85%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span><span>Python</span><span>80%</span></span>
+        <div class="bar"><div class="bar-fill" data-width="80%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span><span>React.js</span><span>72%</span></span>
+        <div class="bar"><div class="bar-fill" data-width="72%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span><span>SQL / MySQL</span><span>70%</span></span>
+        <div class="bar"><div class="bar-fill" data-width="70%"></div></div>
+      </div>
+      <div class="skill-item">
+        <span><span>Git / GitHub</span><span>88%</span></span>
+        <div class="bar"><div class="bar-fill" data-width="88%"></div></div>
+      </div>
+    </div>
+
+    <div class="aside-block reveal">
+      <div class="aside-title">Languages</div>
+      <div class="lang-row"><strong>English</strong><span>Fluent</span></div>
+      <div class="lang-row"><strong>Twi</strong><span>Native</span></div>
+      <div class="lang-row"><strong>French</strong><span>Intermediate</span></div>
+    </div>
+
+    <div class="aside-block reveal">
+      <div class="aside-title">Certifications</div>
+      <ul style="list-style:none; font-size:.82rem; color:var(--muted);">
+        <li style="padding:5px 0; border-bottom:1px solid var(--cream);">🏅 freeCodeCamp — Responsive Web Design</li>
+        <li style="padding:5px 0; border-bottom:1px solid var(--cream);">🏅 Google — Foundations of UX Design</li>
+        <li style="padding:5px 0;">🏅 Coursera — Python for Everybody</li>
+      </ul>
+    </div>
+
+    <div class="aside-block reveal">
+      <div class="aside-title">Interests</div>
+      <div class="tag-list">
+        <span class="tag">Open Source</span>
+        <span class="tag">EdTech</span>
+        <span class="tag">Afro-Futurism</span>
+        <span class="tag">Photography</span>
+        <span class="tag">Chess</span>
+        <span class="tag">Hiking</span>
+        <span class="tag">Music Production</span>
+      </div>
+    </div>
+
+  </aside>
+
+</div><!-- /page-wrap -->
+
+<!-- ════════════════════════════ FOOTER ════════════════════════════ -->
+<footer>
+  <p>
+    &copy; <span id="footer-year">2026</span>
+    <strong>Robert Vincent Payne</strong> &mdash;
+    Designed with HTML5, CSS3 &amp; JavaScript &mdash;
+    University of Cape Coast, Computer Science
+  </p>
+</footer>
+
+<!-- External JavaScript (loaded last so DOM is ready) -->
+<script src="main.js"></script>
+
+</body>
+</html>
